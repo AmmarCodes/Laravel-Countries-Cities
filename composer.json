@@ -1,0 +1,20 @@
+{
+    "name": "alakkad/world-countries-cities",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ammar Alakkad",
+            "email": "am.alakkad@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Alakkad\\WorldCountriesCities": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
