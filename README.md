@@ -10,6 +10,20 @@ A Laravel package for using world's popular countries and cities.
 
 ## Installation
 
+Require the package with composer:
+```
+composer require alakkad/world-countries-cities
+```
+
+Add the ServiceProvider to the providers array in config/app.php
+```
+'Alakkad\WorldCountriesCities\WorldCountriesCitiesServiceProvider',
+```
+
+Copy the package config to your local config with the publish command:
+```
+php artisan vendor:publish
+```
 
 ## Usage
 
