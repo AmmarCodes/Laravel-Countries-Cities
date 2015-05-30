@@ -20,17 +20,42 @@ Add the ServiceProvider to the providers array in config/app.php
 'Alakkad\WorldCountriesCities\WorldCountriesCitiesServiceProvider',
 ```
 
-Copy the package config to your local config with the publish command:
+Copy the package config and migrations files to your local directories with:
 ```
 php artisan vendor:publish
 ```
 
 ## Usage
 
-### Migration and seeders
+### Migration
+
+After running `php artisan vendor:publish` you can directly run:
+```
+php artisan migrate
+```
+
+### Seeders
+In order to seed the migrated tables, you need to edit `database/seeds/DatabaseSeeder.php` and add the following lines:
+```php
+public function run()
+{
+    Model::unguard();
+
+    $this->call('Alakkad\WorldCountriesCities\CitiesSeeder');
+    $this->call('Alakkad\WorldCountriesCities\CountriesSeeder');
+}
+```
+
+Then run:
+```
+php artisan db:seed
+```
+
+Be careful, the seeders files truncate the tables before inserting, to prevent any duplication.
 
 ### Direct usage
 
+To be implementated.
 
 ---
 
