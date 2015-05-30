@@ -18,7 +18,7 @@ class CreateCountriesTable extends Migration
             $table->enum('continent', ['Asia', 'Europe', 'North America', 'Africa', 'Oceania', 'Antarctica', 'South America']);
             $table->string('region', 26);
             $table->decimal('surface_area', 10, 2);
-            $table->smallInteger('indep_year');
+            $table->integer('indep_year', 4);
             $table->integer('population', 11)->unsigned();
             $table->decimal('life_expectancy', 3, 1);
             $table->decimal('gnp', 10, 2);
@@ -26,8 +26,9 @@ class CreateCountriesTable extends Migration
             $table->string('local_name', 45);
             $table->string('government_form', 45);
             $table->string('head_of_state', 60);
-            $table->foreign('capital', 11)->references('id')->on('cities');
+            $table->integer('capital', 11)->unsigned();
             $table->string('code2', 2);
+            $table->foreign('capital', 11)->references('id')->on('cities');
         });
     }
 
