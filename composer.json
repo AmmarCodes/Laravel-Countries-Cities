@@ -18,10 +18,10 @@
     },
     "minimum-stability": "stable",
     "extra": {
-    "laravel": {
-        "providers": [
-            "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
-        ]
+        "laravel": {
+            "providers": [
+                "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
+            ]
+        }
     }
-},
 }
