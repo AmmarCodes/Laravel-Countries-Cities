@@ -3,6 +3,10 @@ World Countries & Cities
 
 A Laravel package for using world's popular countries and cities.
 
+## Supports
+
+- Laravel 5.5+
+
 ## Features
 
 - Add the countries/cities to the database using migration and seeders.
@@ -15,15 +19,8 @@ Require the package with composer:
 composer require alakkad/world-countries-cities
 ```
 
-Add the ServiceProvider to the providers array in config/app.php
-```
-'Alakkad\WorldCountriesCities\WorldCountriesCitiesServiceProvider',
-```
-
-Copy the package config and migrations files to your local directories with:
-```
-php artisan vendor:publish
-```
+The ServiceProvider will be added to the providers array in config/app.php through
+auto-discovery
 
 ## Usage
 
