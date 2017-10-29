@@ -23,5 +23,6 @@
                 "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
             ]
         }
-    }
+    },
+    "license": "MIT"
 }
