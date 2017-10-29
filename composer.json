@@ -1,6 +1,8 @@
 {
     "name": "jadsalhani/world-countries-cities",
     "description": "A package to delivery a wide seed array of Countries & their respective cities.",
+    "keywords": ["laravel", "countries", "cities", "database", "seed"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Jad Salhani",
@@ -8,12 +10,14 @@
         }
     ],
     "require": {
-        "php": ">=7.0.0",
-        "illuminate/support": "5.*"
+        "php": ">=7.0",
+        "illuminate/support": "5.5.x",
+        "symfony/debug": "^3",
+        "symfony/finder": "^3"
     },
     "autoload": {
-        "psr-0": {
-            "Jadsalhani\\WorldCountriesCities": "src/"
+        "psr-4": {
+            "Jadsalhani\\WorldCountriesCities\\": "src/"
         }
     },
     "minimum-stability": "stable",
@@ -23,6 +27,5 @@
                 "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
             ]
         }
-    },
-    "license": "MIT"
+    }
 }
