@@ -1,20 +1,27 @@
 {
-    "name": "alakkad/world-countries-cities",
+    "name": "jadsalhani/world-countries-cities",
     "description": "",
     "authors": [
         {
-            "name": "Ammar Alakkad",
-            "email": "am.alakkad@gmail.com"
+            "name": "Jad Salhani",
+            "email": "jad@salhani.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.0.0",
         "illuminate/support": "5.*"
     },
     "autoload": {
         "psr-0": {
-            "Alakkad\\WorldCountriesCities": "src/"
+            "Jadsalhani\\WorldCountriesCities": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
+            ]
+        }
+    }
 }
