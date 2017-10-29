@@ -38,8 +38,8 @@ public function run()
 {
     Model::unguard();
 
-    $this->call('Alakkad\WorldCountriesCities\CitiesSeeder');
-    $this->call('Alakkad\WorldCountriesCities\CountriesSeeder');
+    $this->call('Jadsalhani\WorldCountriesCities\CitiesSeeder');
+    $this->call('Jadsalhani\WorldCountriesCities\CountriesSeeder');
 }
 ```
 
