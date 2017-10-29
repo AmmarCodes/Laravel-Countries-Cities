@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jadsalhani\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
+                "Jadsalhani\\WorldCountriesCities\\WorldCountriesCities\\WorldCountriesCitiesServiceProvider"
             ]
         }
     }
