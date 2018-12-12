@@ -1,5 +1,5 @@
 <?php
-namespace Alakkad\WorldCountriesCities;
+namespace Jadsalhani\WorldCountriesCities;
 
 use Illuminate\Database\Seeder;
 use Exception;
